@@ -1,6 +1,6 @@
 module.exports = function toReadable (number) {
 
-  ones = [ // разряд единиц — от одного до девяти
+ones = [ // разряд единиц — от одного до девяти
     "zero",
     "one",
     "two",
