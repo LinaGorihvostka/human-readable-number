@@ -62,7 +62,7 @@ switch (true) {
     return ones[Math.floor(number / 100)] + " hundred " + dozens[Math.floor(number / 10) % 10]; // вернуть единицы[число / 100] + " hundred " + круглые десятки[(число / 10 ) % 10]
     break;
     case number % 100 != 0 && number % 100 < 20 && number % 100 >= 10: // если остаток от деления на 100 — от 10 до 19, то
-    return ones[Math.floor(number / 100)] + " hundred " + teen[(Math.floor((number % 100) % 10))]; // вернуть единицы[число / 100] + " hundred " + надцать[индекс надцать]
+    return ones[Math.floor(number / 100)] + " hundred " + teen[Math.floor(number % 100) % 10]; // вернуть единицы[число / 100] + " hundred " + надцать[индекс надцать]
     break;
     case number % 100 != 0 && number % 100 <= 9: // если остаток от деления на 100 — от 1 до 9, то
     return ones[Math.floor(number / 100)] + " hundred " + ones[number % 10];
